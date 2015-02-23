@@ -1,0 +1,142 @@
+body {
+	background: url("img/background.jpg");
+	/*Img Src: http://hetucy.com/soccer-field-wallpaper-hd-30493-hd-wallpaper-background.html*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Century Gothic";
+	background-color: black;
+}
+
+h1#instructions {
+	color: black;
+	font-size: 36x;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	width: 546px;
+	background-color: #FCDC3B;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid white;
+}
+
+div#clear_div {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#clear {
+  width: 125px;
+  height: 25px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #FCDC3B;
+  border-radius: 0px;
+  border: none;
+  padding-top: 2px;
+  margin: 0 auto;
+  color: black;
+}
+
+#clear:hover {
+	opacity: .8;
+}
+
+span.team_name {
+ font-size: 24px;
+}
+
+span.remaining_shots {
+	font-size: 16px;
+}
+
+#gameboard {
+	text-align: center;
+	margin: 0 auto;
+	background: url("img/gameboard.png");
+	width: 561px;
+	height: 421px;
+	margin-top: 20px;
+}
+
+.aim {
+	position: relative;
+	margin-top: 30px;
+	float: left;
+	width: 100px;
+	height: 120px;
+	position: 6;
+}
+
+.aim#left {
+	margin-left: 130px;
+}
+
+.aim:hover {
+	background: #FCDC3B;
+	opacity: .3;
+}
+
+.homescore, .awayscore {
+	float: left;
+	text-align: center;
+	width: 263px;
+	height: 50px;
+	padding-top: 10px;
+	color: white;
+	font-size: 20px;
+}
+
+#scoreboardtop, #scoreboardbottom {
+	position: relative;
+	margin: 0 auto;
+	width: 546px;
+	height: 70px;
+	background-color: black;
+	border: 1px solid white;
+}
+
+.placeholder {
+	position: relative;
+	float: left;
+	margin: 2px;
+	margin-top: 10px;
+	height: 25px;
+	width: 25px;
+	background-color: white;
+	border: 1px solid #FCDC3B;
+	border-radius: 50px;
+	padding: 1px;
+}
+
+#away0, #home0	 {
+	margin-left: 50px;
+}
+
+
+.score {
+	display:block!important;
+	background-color: yellow;
+}
+
+div#clear_div {
+	clear: both;
+	width: 500px;
+	height: 20px;
+	margin: 0 auto;
+}
+
+div#how_to_play {
+	width: 350px;
+	height: 200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+span#game_instructions {
+	color: white;
+	font-size: 13px;
+}
+
+

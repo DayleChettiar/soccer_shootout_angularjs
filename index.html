@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html x-ng-app="">
+<head>
+	<title>Shoot Out Game Simulator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+	<script type="text/javascript" src="script.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
+</head>
+	<body>
+	<h1 id="instructions"><strong>Shoot Out Game Simulator</strong></h1>
+	<div id="gameplay" x-ng-init="" x-ng-controller="gameplay">	
+	<div id="scoreboardtop">
+			<div class="homescore"><span class="team_name">Home Team</span><br /><span class="remaining_shots">Remaining Shots: {{remaininghomeshots}}</span></div>
+			<div class="awayscore"><span class="team_name">Away Team</span><br /><span class="remaining_shots">Remaining Shots: {{remainingawayshots}}</span></div>
+		</div>
+		
+		<div id="scoreboardbottom">
+			<div class="homescore">
+				<div x-ng-class="{score:homegol0, placeholder:true}" id="home0"></div>
+				<div x-ng-class="{score:homegol1, placeholder:true}" id="home1"></div>
+				<div x-ng-class="{score:homegol2, placeholder:true}" id="home2"></div>
+				<div x-ng-class="{score:homegol3, placeholder:true}" id="home3"></div>
+				<div x-ng-class="{score:homegol4, placeholder:true}" id="home4"></div>
+			</div>
+			<div class="awayscore">
+				<div x-ng-class="{score:awaygol0, placeholder:true}" id="away0"></div>
+				<div x-ng-class="{score:awaygol1, placeholder:true}" id="away1"></div>
+				<div x-ng-class="{score:awaygol2, placeholder:true}" id="away2"></div>
+				<div x-ng-class="{score:awaygol3, placeholder:true}" id="away3"></div>
+				<div x-ng-class="{score:awaygol4, placeholder:true}" id="away4"></div>
+			</div>
+		</div>
+
+		<div id="gameboard">
+			<div class="aim" id="left" x-ng-click="leftShot()" ></div>
+			<div class="aim" id="center" x-ng-click="centerShot()" ></div>
+			<div class="aim" id="right" x-ng-click="rightShot()" ></div>
+			<div id="clear_div"></div>
+			<div id="how_to_play">
+				<span id="game_instructions"><strong>How To Play:</strong> Penalty kicks rotate between the Home team and the Away team. The Home team kicks first. To shoot, click on an area of the goal. After you click, you'll get an alert that tells you if you scored.</span>
+			</div>
+		</div>
+
+	</div>
+	<div id="clear_div"><input type= "button" value="Start New Game" id="clear" onclick="window.location.href=window.location.href"></div>
+</body>
+</html>
